@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Century Gothic';
+}
+
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+.title{
+	width: 100%; 
+	background-image:url("van2.gif");
+    background-size: auto 50%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+     text-shadow: 1px 4px 5px rgba(255, 25, 54, .8)
+}
+
+.title h1{
+	color: #fff;
+	font-size: 44px;
+	font-weight: 200;
+	text-align: center;
+}
+
+.boton {
+     border: 5px solid hsla(0, 81%, 50%, 0.3); 
+     padding: 7px; 
+     background-color: hsl(35, 100%, 50%); 
+     color: #ffffff; 
+     text-decoration: none;
+     text-transform: uppercase; 
+     font-family: 'Helvetica', sans-serif; 
+     border-radius: 50px; 
+     position: absolute;
+     top: 6%;
+     left:81%;
+    
+}
+
+.boton:hover{
+	 background:  rgba(0, 0, 0, 0.42);
+    }
+
+.boton_2 {
+     border: 5px solid hsla(0, 81%, 50%, 0.3); 
+     padding: 7px;
+     background-color: hsl(35, 100%, 50%);  
+     color: hsl(0, 0%, 100%); 
+     text-decoration: none; 
+     text-transform: uppercase; 
+     font-family: 'Helvetica', sans-serif;
+     border-radius: 50px; 
+     position: absolute;
+     top: 6%;
+    left:92%;
+}
+
+.boton_2:hover{
+	 background:  rgba(0, 0, 0, 0.42);
+    }
+
+.navegacion{
+	width: 100%;
+	background: #ff840a;
+
+	display: flex;
+	justify-content: center;
+}
+
+.menu{
+	width: 1200px;
+	display: flex;
+	flex-wrap: wrap;
+	height: 90px;
+   
+}
+
+.menu li{
+	flex-basis: 0;
+	flex-grow: 1;
+	border-right: 3px solid #ff840a;
+	position: relative;
+    
+}
+
+.menu .first-item{
+	border-left: 3px solid #ff840a;
+}
+
+.menu li a{
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+    
+}
+
+.menu .imagen{
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	width: 0%;
+	z-index: 20;
+  
+}
+
+.menu li a .text-item{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	top: 0%;
+	position: absolute;
+	z-index: 10;
+ transition: all 0.5s ease;
+}
+
+.menu li a .down-item{
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	background: #ff7823;
+
+	
+}
+
+.menu li:hover .down-item, .menu li:hover .text-item{
+	top: 100%;
+	height: 115%;
+    background:  rgba(0,0,0,0.2);
+     text-shadow: 5px 5px 0px rgba(232, 63, 0, 0.8), 7px 7px 0px #707070;
+}
+
+.menu li:hover .imagen{
+	width: 100%;
+	right: 0px;
+    
+}
+
+audio {
+    box-shadow: 8px 5px 5px rgba(255, 214, 148, 0.92);
+    border-radius: 75px;
+    border: 10px;
+    border-color: hsl(25, 100%, 47%);
+    border-style: solid;
+    
+}
+
+
+
+
+.caja img {
+    background-color: #07b8e2;
+    height: 5%px;
+    width: 5%px;
+    margin: auto;
+    border-radius: 90%;
+    float: center;
+    box-shadow: 5px 5px 0px #35f6fd;
+    padding: 10%px;
+   
+}
+.caja footer {
+    background-color: rgba(186, 0, 255, 0.77);
+    height: auto;
+    width: 15%px;
+    margin: auto;
+    border-radius: 10%;
+    box-shadow: 3px 3px 34px #f034e2;
+    padding: 55%px;
+    border: 4px solid #de83de;
+    float: left;
+     background-image: url(); width: 65%; height: 55vh;
+}
+.caja {
+    position: absolute;
+    top:220%;
+    right: 5%;
+    left: 30%;
+    bottom:250%;
+    text-align: center;
+    font-size: 150%
+    font-family: "Ink Free", arial;
+    
+}
+
+
+.caja h6 {
+    font-family: "gabriola";
+    font-size: 160%;
+    color:azure;
+}
+
+
+.caja img {
+    height: 10%px;
+    width: 10%px;
+    margin: auto;
+    border-radius: 50%;
+    float: center;
+    box-shadow: 6px 3px 8px #0affff;
+    padding: 5px;
+    border: 2px solid #0093ff;
+}
+
+.galeria {
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding:100px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
